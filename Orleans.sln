@@ -220,6 +220,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tester.Redis", "test\Extens
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Serialization.Protobuf", "src\Serializers\Orleans.Serialization.Protobuf\Orleans.Serialization.Protobuf.csproj", "{A073C0EE-8732-42F9-A22E-D47034E25076}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSerializerExternalModels", "test\Misc\TestSerializerExternalModels\TestSerializerExternalModels.csproj", "{F9674B6B-67FF-4779-9B0F-41385AB1CE9E}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cassandra", "Cassandra", "{42C80201-3AC6-4C10-9809-3315A9FDD7A1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orleans.Clustering.Cassandra", "src\Cassandra\Orleans.Clustering.Cassandra\Orleans.Clustering.Cassandra.csproj", "{7A1A2ECE-DC4B-4DE7-AEF7-855C50895171}"
@@ -632,6 +634,10 @@ Global
 		{F50F81B6-E9B5-4143-B66B-A1AD913F6E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F50F81B6-E9B5-4143-B66B-A1AD913F6E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F50F81B6-E9B5-4143-B66B-A1AD913F6E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9674B6B-67FF-4779-9B0F-41385AB1CE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9674B6B-67FF-4779-9B0F-41385AB1CE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9674B6B-67FF-4779-9B0F-41385AB1CE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9674B6B-67FF-4779-9B0F-41385AB1CE9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -748,6 +754,7 @@ Global
 		{84B44F1D-B7FE-40E3-82F0-730A55AC8613} = {316CDCC7-323F-4264-9FC9-667662BB1F80}
 		{B2D53D3C-E44A-4C9B-AAEE-28FB8C1BDF62} = {A6573187-FD0D-4DF7-91D1-03E07E470C0A}
 		{F50F81B6-E9B5-4143-B66B-A1AD913F6E9C} = {4CD3AA9E-D937-48CA-BB6C-158E12257D23}
+		{F9674B6B-67FF-4779-9B0F-41385AB1CE9E} = {70BCC54E-1618-4742-A079-07588065E361}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BFB3429-B5BB-4DB1-95B4-67D77A864952}
