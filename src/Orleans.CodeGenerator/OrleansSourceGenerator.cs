@@ -23,16 +23,17 @@ namespace Orleans.CodeGenerator
                     return;
                 }
 
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_designtimebuild", out var isDesignTimeBuild)
-                    && string.Equals("true", isDesignTimeBuild, StringComparison.OrdinalIgnoreCase))
-                {
-                    return;
-                }
-
                 if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_attachdebugger", out var attachDebuggerOption)
                     && string.Equals("true", attachDebuggerOption, StringComparison.OrdinalIgnoreCase))
                 {
                     Debugger.Launch();
+                }
+
+                if (!Debugger.IsAttached &&
+                    context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_designtimebuild", out var isDesignTimeBuild)
+                    && string.Equals("true", isDesignTimeBuild, StringComparison.OrdinalIgnoreCase))
+                {
+                    return;
                 }
 
                 var options = new CodeGeneratorOptions();
